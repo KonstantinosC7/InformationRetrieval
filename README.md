@@ -44,7 +44,7 @@ Design and implementation of an information search system about songs.
   *	Για την αποθήκευση του ευρετηρίου στο δίσκο θα χρησιμοποιηθεί η συνάρτηση `FSDirectory.open()` του Lucene API `org.apache.lucene.store`. 
 
 ## Αναζήτηση: 
-Για την αναζήτηση των εγγράφων θα δημιουργηθεί μια κλάση indexSearcher, όπου θα χρησιμοποιήθούν τα εξής packages από την Lucene:
+Για την αναζήτηση των εγγράφων θα δημιουργηθεί μια κλάση `indexSearcher`, όπου θα χρησιμοποιήθούν τα εξής packages από την Lucene:
   * Για την ανάλυση μιας ερώτησης απο τον χρήστη θα χρησιμοποιηθεί η συνάρτηση `QueryParser()` του package `org.apache.lucene.queryparser`, 
   οπου μετατρέπει το ερώτημα σε ένα query με τη βοήθεια του **Analyzer**.
   *	Απο το package `org.apache.lucene.search` θα χρησιμοποιηθεί η αφηρημένη κλάση `Query`, οπου θα περιέχει το αποτέλεσμα του `QueryParser()`,
